@@ -11,7 +11,7 @@ public enum PartType {
     public MeshData meshData;
 
     PartType(String filePath) {
-        String modelsDirectory = "C:\\Users\\User\\Desktop\\Папка Макса\\Проекты\\Телеграм Боты\\Rava3D\\assets\\models\\";
+        String modelsDirectory = "C:\\Users\\User\\Desktop\\Rava3D\\assets\\models\\";
 
         try (FileReader fileReader = new FileReader(modelsDirectory + filePath)) {
             this.meshData = new MeshData(fileReader);
@@ -20,3 +20,4 @@ public enum PartType {
         }
     }
 }
+
