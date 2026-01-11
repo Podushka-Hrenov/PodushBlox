@@ -13,7 +13,7 @@ public class Test {
     static Workspace workspace = new Workspace();
     public static void main(String[] args) throws IOException {
         var camera = new Camera(Vec2Int.one.muln(1000));
-        camera.cframe = new CFrame(0, 0, -5f);
+        camera.cframe = new CFrame(0, 0, -5.1f);
         camera.settings(PI/2, 10f, 100f);
         camera.setParent(workspace);
 
@@ -27,3 +27,4 @@ public class Test {
         System.out.println("Done!");
     }
 }
+
