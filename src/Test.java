@@ -11,6 +11,7 @@ import graphics.math.*;
 public class Test {
     static File outputFile = new File("C:\\Users\\User\\Desktop\\Render.png");
     static Workspace workspace = new Workspace();
+    
     public static void main(String[] args) throws IOException {
         var camera = new Camera(Vec2Int.one.muln(1000));
         camera.cframe = new CFrame(0, 0, -5.1f);
@@ -27,4 +28,5 @@ public class Test {
         System.out.println("Done!");
     }
 }
+
 
